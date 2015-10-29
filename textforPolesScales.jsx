@@ -1,0 +1,1 @@
+#target illustratorvar width = 1000 ;var height = 500;var doc = app.documents.add(null, width, height);var poles= doc.pathItems;var linea = [];var iniciox = 0;for (var i = 0; i < 4; i++) {	linea[i] = poles.add();	linea[i].setEntirePath([	[iniciox, 0], [iniciox, height]]);linea[i].name = "name" + i;iniciox += (width / 4) ;}
